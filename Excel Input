@@ -1,0 +1,135 @@
+L1	L2	L3	CAT	SUB
+Application	Printing	Multiple Users Affected	Software	Application Printing Failure
+Application	Printing	Single User Affected	Software	Application Printing Failure
+Application	Reset	Account Unlock	Request	Application Account Unlock
+Application	Reset	Password	Request	Application Password Reset
+Application	System	Access Issue	Request	Application Access Issue
+Application	System	How-to	Inquiry/Help	Application
+Application	System	Multiple Users Affected	Software	Application Failure
+Application	System	Performance	Software	Application Performance
+Application	System	Single User Affected	Software	Application Failure
+Application	System	System Down	Software	Application Failure
+Desktop	Hardware	Hand-Held	Hardware	Hand-held Failure
+Desktop	Hardware	Non SOE	Hardware	Desktop Failure
+Desktop	Hardware	Printer	Hardware	Network Printer
+Desktop	Hardware	SOE	Hardware	Desktop Failure
+Desktop	Remote Access	Password Reset	Request	Remote Access Password Reset
+Desktop	Remote Access	Remote Access Software	Network	Remote Access Failure
+Desktop	Remote Access	Token/Pin Resynch	Security	Remote Access Token/Pin Resynch
+Desktop	Remote Access	VPN Software	Network	Remote Access Failure
+Desktop	Software	How-to	Inquiry/Help	Application
+Desktop	Software	Non SOE	Software	Desktop Failure
+Desktop	Software	Operating System	Software	Operating System Failue
+Desktop	Software	SOE	Software	Desktop Failure
+Desktop	Virus	Outbreak	Security	Virus/Malware Outbreak
+Desktop	Virus	Single User Affected	Software	Virus/Malware Infection
+Environmental	Computer Room	Limited Impact	Environmental	Computer Room Failure
+Environmental	Computer Room	Multiple Systems Impacted	Environmental	Computer Room Failure
+Environmental	Computer Room	Security Breach	Security	Computer Room Breach
+Environmental	Computer Room	Single Systems Impacted	Environmental	Computer Room Failure
+Environmental	Data Centre	Limited Impact	Environmental	Data Center Failure
+Environmental	Data Centre	Multiple Systems Impacted	Environmental	Data Center Failure
+Environmental	Data Centre	Security Breach	Security	Data Center Breach
+Environmental	Data Centre	Single Systems Impacted	Environmental	Data Center Failure
+Environmental	General Facilities	Limited Impact	Environmental	General Facilities Failure
+Environmental	General Facilities	Multiple Systems Impacted	Environmental	General Facilities Failure
+Environmental	General Facilities	Security Breach	Security	Computing Device Stolen
+Environmental	General Facilities	Single Systems Impacted	Environmental	General Facilities Failure
+Mainframe	Connectivity	MQSeries	Hardware	Mainframe Failure
+Mainframe	Connectivity	Multiple Users Affected	Hardware	Mainframe Failure
+Mainframe	Connectivity	Single User Affected	Hardware	Mainframe Failure
+Mainframe	Printing	Multiple Users Affected	Software	Mainframe Printing Failure
+Mainframe	Printing	Single User Affected	Software	Mainframe Printing Failure
+Mainframe	Reset	Password	Request	Mainframe Password Reset
+Mainframe	Reset	Print Queue	Request	Mainframe Print Queue Reset
+Mainframe	Reset	Session	Request	Mainframe Session Reset
+Mainframe	System/Hardware	Backup/Restore issue	Software	Mainframe Backup/Restore Issue
+Mainframe	System/Hardware	Batch/Job/Transaction Program	Software	Mainframe Batch/Job/Transaction
+Mainframe	System/Hardware	Database	Database	Mainframe Failure
+Mainframe	System/Hardware	Licence Expiry	Software	Mainframe License Expiry
+Mainframe	System/Hardware	Multiple Users Affected	Hardware	Mainframe Failure
+Mainframe	System/Hardware	Performance	Hardware	Mainframe Performance
+Mainframe	System/Hardware	Security	Hardware	Mainframe Failure
+Mainframe	System/Hardware	Single User Affected	Hardware	Mainframe Failure
+Mainframe	System/Hardware	Storage	Hardware	Mainframe Failure
+Mainframe	System/Hardware	System Down	Hardware	Mainframe Failure
+Messaging	Email	How-to	Inquiry/Help	Email
+Messaging	Email	Multiple Users Affected	Software	Email Failure
+Messaging	Email	Single User Affected	Software	Email Failure
+Messaging	Email	SPAM	Software	Email SPAM
+Messaging	Fax Gateway	How-to	Inquiry/Help	Fax Gateway
+Messaging	Fax Gateway	Multiple Users Affected	Software	Fax Gateway Failure
+Messaging	Fax Gateway	Single User Affected	Software	Fax Gateway Failure
+Messaging	Instant Messaging	How-to	Inquiry/Help	Instant Messaging
+Messaging	Instant Messaging	Multiple Users Affected	Software	Instant Messaging Failure
+Messaging	Instant Messaging	Single User Affected	Software	Instant Messaging Failure
+Messaging	Meeting Room	How-to	Inquiry/Help	Meeting Room
+Messaging	Meeting Room	Multiple Users Affected	Software	Meeting Room Failure
+Messaging	Meeting Room	Single User Affected	Software	Meeting Room Failure
+Messaging	Reset	Password	Request	Email Password Reset
+Midrange/Server	Printing	Multiple Users Affected	Software	Midrange/Server Printing Failure
+Midrange/Server	Printing	Single User Affected	Software	Midrange/Server Printing Failure
+Midrange/Server	Reset	Password	Request	Midrange/Server Password Reset
+Midrange/Server	Reset	Print Queue	Request	Midrange/Server Print Queue Reset
+Midrange/Server	Reset	Session	Request	Midrange/Server Session Reset
+Midrange/Server	System/Hardware	Backup/Restore issue	Software	Midrange/Server Backup/Restore Issue
+Midrange/Server	System/Hardware	Batch/Job/Transaction Program	Software	Midrange/Server Batch/Job/Transaction
+Midrange/Server	System/Hardware	Database	Database	Midrange/Server Failure
+Midrange/Server	System/Hardware	How-to	Inquiry/Help	Midrange/Server
+Midrange/Server	System/Hardware	Multiple Users Affected	Hardware	Midrange/Server Failure
+Midrange/Server	System/Hardware	Performance	Hardware	Midrange/Sever Performance
+Midrange/Server	System/Hardware	Security	Security	Midrange/Server Infection
+Midrange/Server	System/Hardware	Single User Affected	Hardware	Midrange/Server Failure
+Midrange/Server	System/Hardware	Storeage	Hardware	Midrange/Server Failure
+Midrange/Server	System/Hardware	System Down	Hardware	Midrange/Server Failure
+Midrange/Server	System/Hardware	Virus	Software	Virus/Malware Infection
+Network	Connectivity	How-to	Inquiry/Help	LAN
+Network	Connectivity	Multiple Sites	Network	Connectivity Failure
+Network	Connectivity	Multiple Users Affected	Network	Connectivity Failure
+Network	Connectivity	Performance	Network	Connectivity Failure
+Network	Connectivity	Single Site	Network	Connectivity Failure
+Network	Connectivity	Single User Affected	Network	Connectivity Failure
+Network	Firewall	How-to	Inquiry/Help	Firewall
+Network	Firewall	Multiple Sites	Network	Firewall Failure
+Network	Firewall	Multiple Users Affected	Network	Firewall Failure
+Network	Firewall	Single Site	Network	Firewall Failure
+Network	Firewall	Single User Affected	Network	Firewall Failure
+Network	Hardware	Cabling/Data Point/Patch	Network	LAN Cabling/Data Point/Patch
+Network	Hardware	Multiple Sites	Network	LAN Failure
+Network	Hardware	Single Site	Network	LAN Failure
+Network	Internet Gateway	How-to	Inquiry/Help	Internet Gateway
+Network	Internet Gateway	Multiple Users Affected	Network	Internet Gateway Failure
+Network	Internet Gateway	Password Reset	Request	Internet Gateway Password Reset
+Network	Internet Gateway	Performance	Network	Internet Gateway Performance
+Network	Internet Gateway	Single User Affected	Network	Internet Gateway Failure
+Network	Intruder Detection	IPS - Intruder Prevention Service	Security	Network Intruder Detection
+Network	Remote Access	How-to	Inquiry/Help	Remote Access
+Network	Remote Access	Multiple Users Affected	Network	Remote Access Failure
+Network	Remote Access	Performance	Network	Remote Access Performance
+Network	Remote Access	Single User Affected	Network	Remote Access Failure
+Network	Wireless	How-to	Inquiry/Help	Wireless
+Network	Wireless	Multiple Users Affected	Network	Wireless Failure
+Network	Wireless	Single User Affected	Network	Wireless Failure
+Telephony	Mobile Phone/Pager	Broken	Telephony	Mobile Phone/Pager Hardware Failure
+Telephony	Mobile Phone/Pager	How-to	Inquiry/Help	Mobile Phone/Pager
+Telephony	Mobile Phone/Pager	Performance	Telephony	Mobile Phone/Pager Performance
+Telephony	Mobile Phone/Pager	Stolen	Security	Mobile Device Lost/Stolen
+Telephony	PBX/IVR	How-to	Inquiry/Help	PBX/IVR
+Telephony	PBX/IVR	Multiple Users Affected	Telephony	PBX/IVR Hardware Failure
+Telephony	PBX/IVR	Single User Affected	Telephony	PBX/IVR Hardware Failure
+Telephony	PBX/IVR	System Down	Telephony	PBX/IVR Hardware Failure
+Telephony	PBX/IVR	Telecom Link	Telephony	PBX/IVR Telecom Link
+Telephony	Phone/VOIP/Fax	How-to	Inquiry/Help	Phone/Fax
+Telephony	Phone/VOIP/Fax	Multiple Users Affected	Telephony	Phone/FAX Hardware Failure
+Telephony	Phone/VOIP/Fax	Performance	Telephony	Phone/FAX Performance
+Telephony	Phone/VOIP/Fax	Single User Affected	Telephony	Phone/FAX Hardware Failure
+Telephony	Phone/VOIP/Fax	Teleconference	Telephony	Teleconference Hardware Failure
+Telephony	Phone/VOIP/Fax	Teleconference Polycon	Telephony	Teleconference Hardware Failure
+Telephony	Video Conferencing	How-to	Inquiry/Help	Video Conferencing
+Telephony	Video Conferencing	Performance	Telephony	Video Conferencing Performance
+Telephony	Video Conferencing	System Down	Telephony	Video Conferencing Hardware Failure
+Telephony	Voice Mail	How-to	Inquiry/Help	Voice Mail
+Telephony	Voice Mail	Password Reset	Request	Voice Mail Password Reset
+Telephony	Voice Mail	Performance	Telephony	Voice Mail Perfromance
+Telephony	Voice Mail	Single User Affected	Telephony	Voice Mail Hardware Failure
+Telephony	Voice Mail	System Down	Telephony	Voice Mail Hardware Failure

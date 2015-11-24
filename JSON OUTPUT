@@ -1,0 +1,622 @@
+{
+	"Application": {
+		"Printing": {
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Application Printing Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Application Printing Failure"
+			}
+		},
+		"Reset": {
+			"Account Unlock": {
+				"z_category": "Request",
+				"z_subcategory": "Application Account Unlock"
+			},
+			"Password": {
+				"z_category": "Request",
+				"z_subcategory": "Application Password Reset"
+			}
+		},
+		"System": {
+			"Access Issue": {
+				"z_category": "Request",
+				"z_subcategory": "Application Access Issue"
+			},
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Application"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Application Failure"
+			},
+			"Performance": {
+				"z_category": "Software",
+				"z_subcategory": "Application Performance"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Application Failure"
+			},
+			"System Down": {
+				"z_category": "Software",
+				"z_subcategory": "Application Failure"
+			}
+		}
+	},
+	"Desktop": {
+		"Hardware": {
+			"Hand-Held": {
+				"z_category": "Hardware",
+				"z_subcategory": "Hand-held Failure"
+			},
+			"Non SOE": {
+				"z_category": "Hardware",
+				"z_subcategory": "Desktop Failure"
+			},
+			"Printer": {
+				"z_category": "Hardware",
+				"z_subcategory": "Network Printer"
+			},
+			"SOE": {
+				"z_category": "Hardware",
+				"z_subcategory": "Desktop Failure"
+			}
+		},
+		"Remote Access": {
+			"Password Reset": {
+				"z_category": "Request",
+				"z_subcategory": "Remote Access Password Reset"
+			},
+			"Remote Access Software": {
+				"z_category": "Network",
+				"z_subcategory": "Remote Access Failure"
+			},
+			"Token/Pin Resynch": {
+				"z_category": "Security",
+				"z_subcategory": "Remote Access Token/Pin Resynch"
+			},
+			"VPN Software": {
+				"z_category": "Network",
+				"z_subcategory": "Remote Access Failure"
+			}
+		},
+		"Software": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Application"
+			},
+			"Non SOE": {
+				"z_category": "Software",
+				"z_subcategory": "Desktop Failure"
+			},
+			"Operating System": {
+				"z_category": "Software",
+				"z_subcategory": "Operating System Failue"
+			},
+			"SOE": {
+				"z_category": "Software",
+				"z_subcategory": "Desktop Failure"
+			}
+		},
+		"Virus": {
+			"Outbreak": {
+				"z_category": "Security",
+				"z_subcategory": "Virus/Malware Outbreak"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Virus/Malware Infection"
+			}
+		}
+	},
+	"Environmental": {
+		"Computer Room": {
+			"Limited Impact": {
+				"z_category": "Environmental",
+				"z_subcategory": "Computer Room Failure"
+			},
+			"Multiple Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "Computer Room Failure"
+			},
+			"Security Breach": {
+				"z_category": "Security",
+				"z_subcategory": "Computer Room Breach"
+			},
+			"Single Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "Computer Room Failure"
+			}
+		},
+		"Data Centre": {
+			"Limited Impact": {
+				"z_category": "Environmental",
+				"z_subcategory": "Data Center Failure"
+			},
+			"Multiple Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "Data Center Failure"
+			},
+			"Security Breach": {
+				"z_category": "Security",
+				"z_subcategory": "Data Center Breach"
+			},
+			"Single Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "Data Center Failure"
+			}
+		},
+		"General Facilities": {
+			"Limited Impact": {
+				"z_category": "Environmental",
+				"z_subcategory": "General Facilities Failure"
+			},
+			"Multiple Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "General Facilities Failure"
+			},
+			"Security Breach": {
+				"z_category": "Security",
+				"z_subcategory": "Computing Device Stolen"
+			},
+			"Single Systems Impacted": {
+				"z_category": "Environmental",
+				"z_subcategory": "General Facilities Failure"
+			}
+		}
+	},
+	"Mainframe": {
+		"Connectivity": {
+			"MQSeries": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			}
+		},
+		"Printing": {
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Mainframe Printing Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Mainframe Printing Failure"
+			}
+		},
+		"Reset": {
+			"Password": {
+				"z_category": "Request",
+				"z_subcategory": "Mainframe Password Reset"
+			},
+			"Print Queue": {
+				"z_category": "Request",
+				"z_subcategory": "Mainframe Print Queue Reset"
+			},
+			"Session": {
+				"z_category": "Request",
+				"z_subcategory": "Mainframe Session Reset"
+			}
+		},
+		"System/Hardware": {
+			"Backup/Restore issue": {
+				"z_category": "Software",
+				"z_subcategory": "Mainframe Backup/Restore Issue"
+			},
+			"Batch/Job/Transaction Program": {
+				"z_category": "Software",
+				"z_subcategory": "Mainframe Batch/Job/Transaction"
+			},
+			"Database": {
+				"z_category": "Database",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Licence Expiry": {
+				"z_category": "Software",
+				"z_subcategory": "Mainframe License Expiry"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Performance": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Performance"
+			},
+			"Security": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"Storage": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			},
+			"System Down": {
+				"z_category": "Hardware",
+				"z_subcategory": "Mainframe Failure"
+			}
+		}
+	},
+	"Messaging": {
+		"Email": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Email"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Email Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Email Failure"
+			},
+			"SPAM": {
+				"z_category": "Software",
+				"z_subcategory": "Email SPAM"
+			}
+		},
+		"Fax Gateway": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Fax Gateway"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Fax Gateway Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Fax Gateway Failure"
+			}
+		},
+		"Instant Messaging": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Instant Messaging"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Instant Messaging Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Instant Messaging Failure"
+			}
+		},
+		"Meeting Room": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Meeting Room"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Meeting Room Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Meeting Room Failure"
+			}
+		},
+		"Reset": {
+			"Password": {
+				"z_category": "Request",
+				"z_subcategory": "Email Password Reset"
+			}
+		}
+	},
+	"Midrange/Server": {
+		"Printing": {
+			"Multiple Users Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Midrange/Server Printing Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Software",
+				"z_subcategory": "Midrange/Server Printing Failure"
+			}
+		},
+		"Reset": {
+			"Password": {
+				"z_category": "Request",
+				"z_subcategory": "Midrange/Server Password Reset"
+			},
+			"Print Queue": {
+				"z_category": "Request",
+				"z_subcategory": "Midrange/Server Print Queue Reset"
+			},
+			"Session": {
+				"z_category": "Request",
+				"z_subcategory": "Midrange/Server Session Reset"
+			}
+		},
+		"System/Hardware": {
+			"Backup/Restore issue": {
+				"z_category": "Software",
+				"z_subcategory": "Midrange/Server Backup/Restore Issue"
+			},
+			"Batch/Job/Transaction Program": {
+				"z_category": "Software",
+				"z_subcategory": "Midrange/Server Batch/Job/Transaction"
+			},
+			"Database": {
+				"z_category": "Database",
+				"z_subcategory": "Midrange/Server Failure"
+			},
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Midrange/Server"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Midrange/Server Failure"
+			},
+			"Performance": {
+				"z_category": "Hardware",
+				"z_subcategory": "Midrange/Sever Performance"
+			},
+			"Security": {
+				"z_category": "Security",
+				"z_subcategory": "Midrange/Server Infection"
+			},
+			"Single User Affected": {
+				"z_category": "Hardware",
+				"z_subcategory": "Midrange/Server Failure"
+			},
+			"Storeage": {
+				"z_category": "Hardware",
+				"z_subcategory": "Midrange/Server Failure"
+			},
+			"System Down": {
+				"z_category": "Hardware",
+				"z_subcategory": "Midrange/Server Failure"
+			},
+			"Virus": {
+				"z_category": "Software",
+				"z_subcategory": "Virus/Malware Infection"
+			}
+		}
+	},
+	"Network": {
+		"Connectivity": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "LAN"
+			},
+			"Multiple Sites": {
+				"z_category": "Network",
+				"z_subcategory": "Connectivity Failure"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Connectivity Failure"
+			},
+			"Performance": {
+				"z_category": "Network",
+				"z_subcategory": "Connectivity Failure"
+			},
+			"Single Site": {
+				"z_category": "Network",
+				"z_subcategory": "Connectivity Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Connectivity Failure"
+			}
+		},
+		"Firewall": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Firewall"
+			},
+			"Multiple Sites": {
+				"z_category": "Network",
+				"z_subcategory": "Firewall Failure"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Firewall Failure"
+			},
+			"Single Site": {
+				"z_category": "Network",
+				"z_subcategory": "Firewall Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Firewall Failure"
+			}
+		},
+		"Hardware": {
+			"Cabling/Data Point/Patch": {
+				"z_category": "Network",
+				"z_subcategory": "LAN Cabling/Data Point/Patch"
+			},
+			"Multiple Sites": {
+				"z_category": "Network",
+				"z_subcategory": "LAN Failure"
+			},
+			"Single Site": {
+				"z_category": "Network",
+				"z_subcategory": "LAN Failure"
+			}
+		},
+		"Internet Gateway": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Internet Gateway"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Internet Gateway Failure"
+			},
+			"Password Reset": {
+				"z_category": "Request",
+				"z_subcategory": "Internet Gateway Password Reset"
+			},
+			"Performance": {
+				"z_category": "Network",
+				"z_subcategory": "Internet Gateway Performance"
+			},
+			"Single User Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Internet Gateway Failure"
+			}
+		},
+		"Intruder Detection": {
+			"IPS - Intruder Prevention Service": {
+				"z_category": "Security",
+				"z_subcategory": "Network Intruder Detection"
+			}
+		},
+		"Remote Access": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Remote Access"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Remote Access Failure"
+			},
+			"Performance": {
+				"z_category": "Network",
+				"z_subcategory": "Remote Access Performance"
+			},
+			"Single User Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Remote Access Failure"
+			}
+		},
+		"Wireless": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Wireless"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Wireless Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Network",
+				"z_subcategory": "Wireless Failure"
+			}
+		}
+	},
+	"Telephony": {
+		"Mobile Phone/Pager": {
+			"Broken": {
+				"z_category": "Telephony",
+				"z_subcategory": "Mobile Phone/Pager Hardware Failure"
+			},
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Mobile Phone/Pager"
+			},
+			"Performance": {
+				"z_category": "Telephony",
+				"z_subcategory": "Mobile Phone/Pager Performance"
+			},
+			"Stolen": {
+				"z_category": "Security",
+				"z_subcategory": "Mobile Device Lost/Stolen"
+			}
+		},
+		"PBX/IVR": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "PBX/IVR"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Telephony",
+				"z_subcategory": "PBX/IVR Hardware Failure"
+			},
+			"Single User Affected": {
+				"z_category": "Telephony",
+				"z_subcategory": "PBX/IVR Hardware Failure"
+			},
+			"System Down": {
+				"z_category": "Telephony",
+				"z_subcategory": "PBX/IVR Hardware Failure"
+			},
+			"Telecom Link": {
+				"z_category": "Telephony",
+				"z_subcategory": "PBX/IVR Telecom Link"
+			}
+		},
+		"Phone/VOIP/Fax": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Phone/Fax"
+			},
+			"Multiple Users Affected": {
+				"z_category": "Telephony",
+				"z_subcategory": "Phone/FAX Hardware Failure"
+			},
+			"Performance": {
+				"z_category": "Telephony",
+				"z_subcategory": "Phone/FAX Performance"
+			},
+			"Single User Affected": {
+				"z_category": "Telephony",
+				"z_subcategory": "Phone/FAX Hardware Failure"
+			},
+			"Teleconference": {
+				"z_category": "Telephony",
+				"z_subcategory": "Teleconference Hardware Failure"
+			},
+			"Teleconference Polycon": {
+				"z_category": "Telephony",
+				"z_subcategory": "Teleconference Hardware Failure"
+			}
+		},
+		"Video Conferencing": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Video Conferencing"
+			},
+			"Performance": {
+				"z_category": "Telephony",
+				"z_subcategory": "Video Conferencing Performance"
+			},
+			"System Down": {
+				"z_category": "Telephony",
+				"z_subcategory": "Video Conferencing Hardware Failure"
+			}
+		},
+		"Voice Mail": {
+			"How-to": {
+				"z_category": "Inquiry/Help",
+				"z_subcategory": "Voice Mail"
+			},
+			"Password Reset": {
+				"z_category": "Request",
+				"z_subcategory": "Voice Mail Password Reset"
+			},
+			"Performance": {
+				"z_category": "Telephony",
+				"z_subcategory": "Voice Mail Perfromance"
+			},
+			"Single User Affected": {
+				"z_category": "Telephony",
+				"z_subcategory": "Voice Mail Hardware Failure"
+			},
+			"System Down": {
+				"z_category": "Telephony",
+				"z_subcategory": "Voice Mail Hardware Failure"
+			}
+		}
+	}
+}

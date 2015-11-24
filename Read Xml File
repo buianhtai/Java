@@ -1,0 +1,186 @@
+package csc.com;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import org.w3c.dom.NodeList;
+import org.w3c.dom.Node;
+
+public class ReadXml
+{
+
+	public static void main(String argv[])
+	{
+		String fileName = "D:\\XML_File\\staff.xml";
+		String fileDest = "D:\\XML_File\\staffNew.xml";
+		
+		//ReadXmlFile(fileName);
+		
+		
+		BufferedReader br = null;
+		try
+		{
+			String sCurrentLine;
+			br = new BufferedReader(new FileReader(fileName));
+			String fullContent="";
+			while ((sCurrentLine = br.readLine()) != null)
+			{
+				String str = sCurrentLine;
+				if(str.contains(">")&&str.contains("</")&&!str.contains("tns:"))
+				{
+				  String vTag=str.substring(str.indexOf(">")+1,str.indexOf("</"));
+				  String vTagNew="cdata_open__"+vTag+"cdata_close__";
+				  str=str.replaceAll(vTag, vTagNew);
+				}
+				System.out.println(str);
+				fullContent+=str+"\n";
+			}
+			CreateFile(fileDest,fullContent);
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		} finally
+		{
+			try
+			{
+				if (br != null)
+					br.close();
+			} catch (IOException ex)
+			{
+				ex.printStackTrace();
+			}
+		}
+
+	}
+	
+	public static void Read(String src,String dest)
+	{
+		/*String fileName = argv[0];//"D:\\XML_File\\staff.xml";
+		String fileDest = argv[1];//"D:\\XML_File\\staffNew.xml";
+*/		
+		//ReadXmlFile(fileName);
+		
+		String fileName = "D:\\XML_File\\staff.xml";
+		String fileDest = "D:\\XML_File\\staffNew.xml";
+		
+		BufferedReader br = null;
+		try
+		{
+			String sCurrentLine;
+			br = new BufferedReader(new FileReader(src));
+			String fullContent="";
+			while ((sCurrentLine = br.readLine()) != null)
+			{
+				String str = sCurrentLine;
+				if(str.contains(">")&&str.contains("</")&&!str.contains("tns:"))
+				{
+				  String vTag=str.substring(str.indexOf(">")+1,str.indexOf("</"));
+				  String vTagNew="cdata_open__"+vTag+"cdata_close__";
+				  //str.replaceAll(vTag, "cdata_open__"+vTag+"cdata_close__");
+				//  System.out.println(vTagNew);
+				  str=str.replaceAll(vTag, vTagNew);
+				}
+				System.out.println(str);
+				fullContent+=str+"\n";
+			}
+			CreateFile(dest,fullContent);
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		} finally
+		{
+			try
+			{
+				if (br != null)
+					br.close();
+			} catch (IOException ex)
+			{
+				ex.printStackTrace();
+			}
+		}
+
+	}
+
+	public static void CreateFile(String fileDir, String content)
+	{
+		try
+		{
+			File file = new File(fileDir);
+			// if file doesnt exists, then create it
+			if (!file.exists())
+			{
+				file.createNewFile();
+			}
+			FileWriter fw = new FileWriter(file.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(content);
+			bw.close();
+			System.out.println("Done");
+
+		} catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public static void ReadXmlFile(String fileDir)
+	{
+		try
+		{
+			File file = new File(fileDir);
+			DocumentBuilder dBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+			Document doc = dBuilder.parse(file);
+			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+			if (doc.hasChildNodes())
+			{
+				printNote(doc.getChildNodes());
+			}
+		} catch (Exception e)
+		{
+			System.out.println(e.getMessage());
+		}
+
+	}
+
+	private static void printNote(NodeList nodeList)
+	{
+		for (int count = 0; count < nodeList.getLength(); count++)
+		{
+			Node tempNode = nodeList.item(count);
+			// make sure it's element node.
+			if (tempNode.getNodeType() == Node.ELEMENT_NODE)
+			{
+				// get node name and value
+				System.out.println("\nNode Name =" + tempNode.getNodeName() + " [OPEN]");
+				System.out.println("Node Value =" + tempNode.getTextContent());
+
+				/*if (tempNode.hasAttributes())
+				{
+					// get attributes names and values
+					NamedNodeMap nodeMap = tempNode.getAttributes();
+
+					for (int i = 0; i < nodeMap.getLength(); i++)
+					{
+
+						Node node = nodeMap.item(i);
+						System.out.println("attr name : " + node.getNodeName());
+						System.out.println("attr value : " + node.getNodeValue());
+					}
+				}
+				if (tempNode.hasChildNodes())
+				{
+					// loop again if has child nodes
+					printNote(tempNode.getChildNodes());
+				}*/
+				System.out.println("Node Name =" + tempNode.getNodeName() + " [CLOSE]");
+			}
+		}
+	}
+}

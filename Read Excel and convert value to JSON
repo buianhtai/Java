@@ -1,0 +1,123 @@
+package csc.com;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Hashtable;
+import java.util.List;
+
+import jxl.Cell;
+import jxl.CellType;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+
+public class ReadExcel
+{
+	private String inputFile;
+
+	public void setInputFile(String inputFile)
+	{
+		this.inputFile = inputFile;
+	}
+
+	public void read() throws IOException
+	{
+		File inputWorkbook = new File(inputFile);
+		Workbook w;
+		try
+		{
+			w = Workbook.getWorkbook(inputWorkbook);	
+			Sheet sheet = w.getSheet(0);
+			String fullJson="";
+			
+			
+			
+			String close_tag=" }\n";
+			String open_tag=" {\n";
+			String split=",";
+			
+			String prev_l1="";
+			String prev_l2="";
+			String prev_l3="";
+			
+			//sheet.getRows()
+			for (int i = 1; i <3 ; i++)
+			{
+				String z_category="";
+				String z_subcategory="";
+				String level3="";
+				String level2="";
+				String level1="";				
+				Cell cell = sheet.getCell(3, i);
+				z_category=cell.getContents();
+				
+				cell = sheet.getCell(4, i);
+				z_subcategory=cell.getContents();
+				
+				cell = sheet.getCell(2, i);
+				level3=cell.getContents();
+				
+				cell = sheet.getCell(1, i);
+				level2=cell.getContents();
+				
+				cell = sheet.getCell(0, i);
+				level1=cell.getContents();
+			
+				if(!prev_l1.equals(level1))
+				{
+					prev_l1=level1;
+					fullJson += (level1.length()>0?level1+open_tag:"") ;		
+					
+				}
+				
+				if(!prev_l2.equals(level2))
+				{
+					prev_l2=level2;
+					
+					fullJson +="\t "+ (level2.length()>0?level2+open_tag:"");	
+				}
+					
+				if(!prev_l3.equals(level3))
+				{
+					prev_l3=level3;
+					fullJson +=
+							"\t\t\t"+(level3.length()>0?level3+open_tag:"")+
+							"\t\t\t\t\"z_category\":\""+z_category+"\",  "+
+							"\"z_subcategory\":\""+ z_subcategory+"\"\n";	
+				}
+				
+				
+				if (level3.length() > 0 && prev_l3.equals(level3))
+					fullJson += "\t\t\t"+close_tag + split;
+				else if (level3.length() > 0 && !prev_l3.equals(level3))
+					fullJson +="\t\t\t"+ close_tag;
+
+				/*if (level2.length() > 0 && !prev_l2.equals(level2))
+					fullJson += close_tag + split;
+				else if (level2.length() > 0 && prev_l2.equals(level2))
+					fullJson += close_tag;
+
+				if (level1.length() > 0 && !prev_l1.equals(level1))
+					fullJson += close_tag + split;
+				else if (level1.length() > 0 && prev_l1.equals(level1))
+					fullJson += close_tag;*/
+					
+			}
+			System.out.println(fullJson);
+		} catch (BiffException e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public static void main(String[] args) throws IOException
+	{
+		ReadExcel test = new ReadExcel();
+		test.setInputFile("D:\\Excel.xls");
+		test.read();
+	}
+
+}

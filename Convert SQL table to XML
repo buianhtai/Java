@@ -1,0 +1,69 @@
+public static void Generate_File_Mapping()
+	{
+		DBFactory dbf= new DBFactory();
+		dbf.connect("MSSQL");
+		ResultSet rs = null;
+		String query=
+			" select TransactionType,Form,Field,OTA,Z_Request_Type , "+
+			"	(ROW_NUMBER() OVER (PARTITION BY TransactionType "+
+			" ORDER BY TransactionType)) rnTran, "+ 
+			"	(ROW_NUMBER() OVER (PARTITION BY TransactionType,Form "+
+			" ORDER BY TransactionType)) rnForm, "+
+			" (select COUNT(*) from Config  "+
+			" where Config.TransactionType=cf.TransactionType)as nTran, "+
+			"	(	select COUNT(*) from Config  "+
+			"		where Config.TransactionType=cf.TransactionType "+
+			"		and Config.Form=cf.Form "+
+			"	)as nFormPerTran "+
+			" from Config cf "+
+			" order by TransactionType,Form,Field,OTA ";
+
+		try
+		{
+			rs=dbf.query(query);
+			String content="";
+			while(rs.next())
+			{
+				int rnTran= rs.getInt("rnTran");
+				int rnForm= rs.getInt("rnForm");
+				int nFormPerTran= rs.getInt("nFormPerTran");
+				int nTran= rs.getInt("nTran");
+				
+				String TransactionType=rs.getString("TransactionType");
+				String Form=rs.getString("Form");
+				String Field=rs.getString("Field");
+				String Z_Request_Type=rs.getString("Z_Request_Type");
+
+				if(rnTran==1)
+					content +="\t <Transaction name='"+TransactionType+"'> \n";
+				if(rnForm==1)
+				content +="\t\t <Form name='"+Form+"'> \n";
+				content +="\t\t\t <Field > \n";
+				content +="\t\t\t\t 	<Pam>"+Z_Request_Type+"</Pam> \n";
+				content +="\t\t\t\t 	<Remedy>"+Field+"	 </Remedy> \n";
+				content +="\t\t\t </Field > \n";
+								
+				if(rnForm==nFormPerTran)
+					content +="\t\t </Form> \n";
+				
+				if(rnTran==nTran)
+					content +="\t </Transaction> \n";				
+			}
+			try
+			{
+				Common.string2XML(content);
+			} catch (Exception e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		} catch (SQLException e)
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}

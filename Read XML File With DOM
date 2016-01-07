@@ -1,0 +1,71 @@
+public static void Read_WorkNote()
+	{
+		/*
+		<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<query-action-result>
+	<status>success</status>
+	<entries>
+		<metadata>
+			<entry-count>1</entry-count>
+		</metadata>
+		<entry id="WLG000000003934">
+			<field name="Incident Number">SM2-INC00007644</field>
+			<field name="z2AF Work Log01">
+				<filename-in-remedy>test.txt</filename-in-remedy>
+				<attachment-data>
+					<![CDATA[dGVzdA==]]>
+				</attachment-data>
+			</field>
+			<field name="z2AF Work Log02">
+				<filename-in-remedy>test.txt</filename-in-remedy>
+				<attachment-data>
+					<![CDATA[dGVzdA==]]>
+				</attachment-data>
+			</field>
+			<field name="z2AF Work Log03"/>
+			<field name="Description">Two Attachment Test</field>
+			<field name="Detailed Description">TST06</field>
+		</entry>
+	</entries>
+</query-action-result>
+		*/
+		try
+		{
+			
+			Hashtable< String, String> FieldsResultRemedy= new Hashtable<String, String>();
+			Hashtable< String, String> MappingFields= new Hashtable<String, String>();
+			
+			
+			
+			File inputFile = new File("D:\\WorkNote_Response.xml");
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+			Document doc = dBuilder.parse(inputFile);
+			doc.getDocumentElement().normalize();
+			System.out.println("Root element :" + doc.getDocumentElement().getNodeName());
+			NodeList nList = doc.getElementsByTagName("entry");
+			System.out.println("----------------------------");
+			for (int temp = 0; temp < nList.getLength(); temp++)
+			{
+				Node nNode = nList.item(temp);
+				System.out.println("\nCurrent Element :" + nNode.getNodeName());
+				NodeList nListField = doc.getElementsByTagName("field");
+				for (int tempF = 0; tempF < nListField.getLength(); tempF++)
+				{
+					nNode = nListField.item(tempF);
+					Element eElement = (Element) nNode;
+					System.out.println("\tName : " + eElement.getAttribute("name"));
+					System.out.println("\tNodeName:" + nNode.getNodeName());
+					System.out.println("\tNodeValue:" + nNode.getTextContent()+"\n________________________________________");
+					
+					String Key=eElement.getAttribute("name");
+					String Value =nNode.getTextContent();
+					FieldsResultRemedy.put(Key, Value);
+				}
+			}
+		} catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+		
+	}
